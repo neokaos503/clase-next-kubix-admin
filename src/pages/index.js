@@ -1,8 +1,12 @@
+
+
 export default function Hero() {
   return (
+    
     <div className="relative overflow-hidden bg-white">
+      
       <div className="mx-auto max-w-7xl">
-        <div className=" z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
+        <div className="z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:relative w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
           <svg
             className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
             fill="currentColor"
@@ -30,15 +34,14 @@ export default function Hero() {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="/login"
+                    href="/"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-600 px-8 py-3 text-base font-medium text-white hover:bg-red-700 md:py-4 md:px-10 md:text-lg"
                   >
                     Comenzar
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="/login"
+                  <a href="./firstpost"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-100 px-8 py-3 text-base font-medium text-red-700 hover:bg-red-200 md:py-4 md:px-10 md:text-lg"
                   >
                    mas información

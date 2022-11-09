@@ -2,26 +2,32 @@ import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
+import logoKubix from '../public/logoeditable1.svg'
 
 const navigation = [
-  { name: 'Product', href: 'Login' },
-  { name: 'Features', href: 'Login' },
-  { name: 'Marketplace', href: 'Login' },
-  { name: 'Company', href: 'Login' },
+  { name: 'Nosotros', href: 'nosotros' },
+  { name: 'Servicios', href: 'servicios' },
+  { name: 'Blog', href: 'blog' },
+ 
 ];
 
 
 export default function Header() {
 return <>
-
 <Popover>
-    <div className="relative overflow-hidden px-4 pt-6 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-r from-red-100 via-gray-100 to-red-100 relative overflow-hidden px-4 pt-6 sm:px-6 lg:px-8">
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
                   <div className="flex w-full items-center justify-between md:w-auto">
-                    <a href="#">
+                    <a href="/">
                       <span className="sr-only">Your Company</span>
-                      <img alt="Your Company" className="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600" />
+                      <Image
+        src={logoKubix}
+        alt="logoKubix"
+        width={85} 
+        height={85} 
+      />
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
@@ -37,8 +43,8 @@ return <>
                       {item.name}
                     </a>
                   ))}
-                  <a href="login" className="font-medium text-red-600 hover:text-red-500">
-                    Log in
+                  <a href="/" className="font-medium text-red-600 hover:text-red-500">
+                    Contactanos
                   </a>
                 </div>
               </nav>
@@ -57,7 +63,12 @@ return <>
                 <div className=" rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
                   <div className="flex items-center justify-between px-5 pt-4">
                     <div>
-                      <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600" alt="" />
+                       <Image
+        src={logoKubix}
+        alt="logoKubix"
+        width={85} 
+        height={85} 
+      />
                     </div>
                     <div className="-mr-2">
                       <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
@@ -73,7 +84,7 @@ return <>
                       </a>
                     ))}
                   </div>
-                  <Link href="/login" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-red-600 hover:bg-gray-100">
+                  <Link href="/" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-red-600 hover:bg-gray-100">
                     Comencemos
                   </Link>
                 </div>
