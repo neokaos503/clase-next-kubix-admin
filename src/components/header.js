@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
 import Image from 'next/image';
 import logoKubix from '../public/logoeditable1.svg'
 
@@ -9,6 +8,7 @@ const navigation = [
   { name: 'Nosotros', href: 'nosotros' },
   { name: 'Servicios', href: 'servicios' },
   { name: 'Blog', href: 'blog' },
+  { name: 'Contactanos', href: 'contactanos' },
  
 ];
 
@@ -42,10 +42,9 @@ return <>
                     <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
                       {item.name}
                     </a>
+                    
                   ))}
-                  <a href="/" className="font-medium text-red-600 hover:text-red-500">
-                    Contactanos
-                  </a>
+                  
                 </div>
               </nav>
             </div>
@@ -84,9 +83,6 @@ return <>
                       </a>
                     ))}
                   </div>
-                  <Link href="/" className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-red-600 hover:bg-gray-100">
-                    Comencemos
-                  </Link>
                 </div>
               </Popover.Panel>
             </Transition>
