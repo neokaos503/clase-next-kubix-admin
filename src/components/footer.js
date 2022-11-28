@@ -3,7 +3,7 @@ import logoKubix from '../public/logoeditable1.svg'
 
 export default function Footer ()  {
   return <>
-  <footer class="bg-gradient-to-r from-yellow-200  via-pink-100 to-red-100">
+  <footer class="bg-gradient-to-r from-green-200  via-yellow-100 to-green-100">
   <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
